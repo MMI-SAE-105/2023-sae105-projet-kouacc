@@ -1,0 +1,28 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-form__label {
+    color: #000;
+    /* Body 1 */
+    font-family: Lato;
+    font-size: var(--body-1);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+
+.contact-form__input {
+    border: 1px solid #C6C6C6;
+    background: var(--Gris, #F1F1F1);
+    color: #757575;
+    /* Body 2 */
+    font-family: Lato;
+    font-size: var(--body-2);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    padding: 13px 21px 13px 21px;
+}

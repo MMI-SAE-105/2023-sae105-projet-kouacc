@@ -1,0 +1,44 @@
+form > button::before {
+    display: flex;
+    width: 102px;
+    height: 43px;
+    padding: 11px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+
+    /* Button */
+    font-family: Lato;
+    font-size: var(--button);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 1.8px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+form > button::after {
+    display: flex;
+    width: 102px;
+    height: 43px;
+    padding: 11px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: var(--Noir, #252525);
+    color: #FFF;
+    text-align: center;
+
+    /* Button */
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 1.8px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}

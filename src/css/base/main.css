@@ -14,3 +14,7 @@ h1 > span {
     text-decoration-color: #F25E5E;
     text-decoration-thickness: 24px;
 }
+
+.container {
+    padding: 0px 25px 0px 25px;
+}
