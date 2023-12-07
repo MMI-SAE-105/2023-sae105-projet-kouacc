@@ -1,0 +1,19 @@
+::root {
+    --eva01-a1: rgba(118, 88, 152, 1);
+    --eva01-a2: rgba(166, 207, 89, 1);
+    --noir: rgba(37, 37, 37, 1);
+    --blanc: rgba(255, 255, 255, 1);
+    --gris: rgba(241, 241, 241, 1);
+    --rouge-accent: rgba(242, 94, 94, 1);
+    --gris-blog: rgba(217, 217, 217, 1);
+    
+    /* Text-size styles */
+    /* base size: small-text (12px) */
+    --heading-1: 3.5rem;
+    --small-text: 1rem;
+    --heading-2: 2.17rem;
+    --heading-3: 1.67rem;
+    --body-1: 1.67rem;
+    --body-2: 1.17rem;
+    --button: 1rem;
+}

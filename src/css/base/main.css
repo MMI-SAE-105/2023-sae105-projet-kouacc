@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Times New Roman MT Std Bold Condensed';
+    src: url('/src/fonts/timesstd.woff2') format('woff2'),
+}
+
+h1 {
+    font-family: 'Times New Roman MT Std Bold Condensed';
+    text-transform: uppercase;
+}
+
+h1 > span {
+    text-decoration-line: underline;
+    text-decoration-style: "solid";
+    text-decoration-color: #F25E5E;
+    text-decoration-thickness: 24px;
+}
