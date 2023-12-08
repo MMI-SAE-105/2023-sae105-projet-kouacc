@@ -1,9 +1,16 @@
 header {
     background-color: var(--Noir, #252525);
-    padding: 6.21px;
+    padding: 13px 6.21px 13px 6.21px;
 }
 
-header > a {
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar__home > a {
     text-decoration: none;
     color: #FFF;
     color: #FFF;
@@ -16,12 +23,24 @@ header > a {
         text-transform: uppercase;
 }
 
-.navbar-buttons {
+.navbar__home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.navbar__buttons {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
+}
+
+.navbar__buttons > button {
+    background-color: transparent;
+    border: none;
 }
 
 nav {

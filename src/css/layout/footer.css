@@ -7,10 +7,9 @@ footer > ul {
     list-style: none;
 }
 
-footer > p {
+footer > p, a {
     color: #757575;
     text-align: center;
-    
 }
 
 footer > ul > li > a {
