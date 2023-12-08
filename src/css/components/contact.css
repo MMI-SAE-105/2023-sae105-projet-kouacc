@@ -26,3 +26,8 @@
     line-height: 140%; /* 19.6px */
     padding: 13px 21px 13px 21px;
 }
+
+.contact-form__send {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,46 @@
+header {
+    background-color: var(--Noir, #252525);
+    padding: 6.21px;
+}
+
+header > a {
+    text-decoration: none;
+    color: #FFF;
+    color: #FFF;
+        font-family: Times New Roman MT Std;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        /* 33.6px */
+        text-transform: uppercase;
+}
+
+.navbar-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+nav {
+    background-color: var(--Noir, #252525);
+    display: none;
+}
+
+nav > ul {
+    list-style: none;
+
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #FFF;
+    /* Body 2 */
+    font-family: Lato;
+    font-size: var(--body-1);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}

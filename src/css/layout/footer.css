@@ -7,7 +7,13 @@ footer > ul {
     list-style: none;
 }
 
-footer > ul > li {
+footer > p {
+    color: #757575;
+    text-align: center;
+    
+}
+
+footer > ul > li > a {
     text-decoration: none;
     color: #FFF;
     /* Body 2 */
@@ -16,4 +22,23 @@ footer > ul > li {
     font-style: normal;
     font-weight: 400;
     line-height: 140%; /* 19.6px */
+}
+
+footer > a, span {
+    color: #FFF;
+    
+    /* Small text */
+    font-family: Lato;
+    font-size: var(--small-text);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 16.8px */
+    text-decoration: none;
+    display: flex;
+}
+
+.student-info {
+    display: flex;
+    justify-content: space-between;
 }

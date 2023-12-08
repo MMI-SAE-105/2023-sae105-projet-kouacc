@@ -18,3 +18,27 @@ h1 > span {
 .container {
     padding: 0px 25px 0px 25px;
 }
+
+p {
+    color: #000;
+    /* Small text */
+    font-family: Lato;
+    font-size: var(--small-text);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 16.8px */
+}
+
+.line {
+    display: flex;
+    width: 227px;
+    height: 9px;
+    background: #765898;
+    box-shadow: 4px 4px 0px 0px #A6CF59;
+    border: none;
+    margin: 0;
+    padding: 0;
+    
+    
+}
