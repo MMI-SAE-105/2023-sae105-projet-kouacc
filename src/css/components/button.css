@@ -22,4 +22,30 @@
     text-transform: uppercase;
     margin-top: 25px;
     margin-bottom: 64px;
+    border: 0;
+    box-shadow: 4px 4px 0px 0px #765898;
+}
+
+.movie-info__button {
+    display: flex;
+    width: 281px;
+    height: 34px;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    background: var(--Noir, #252525);
+    box-shadow: 4px 4px 0px 0px #765898;
+    border: 0;
+
+
+    color: #FFF;
+    /* Button */
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 1.8px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
 }

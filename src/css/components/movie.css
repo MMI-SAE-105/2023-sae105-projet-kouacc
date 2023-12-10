@@ -1,0 +1,31 @@
+section > figcaption {
+    color: #000;
+
+/* Body 1 */
+font-family: Lato;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 30px */ 
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+
+}
+
+section > figure {
+    margin: 0;
+}
+
+section > figure > img {
+    display: flex;    
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
