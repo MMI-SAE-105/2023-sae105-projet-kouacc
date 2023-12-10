@@ -1,4 +1,4 @@
-section > figcaption {
+.movie > figcaption {
     color: #000;
 
 /* Body 1 */
@@ -9,19 +9,22 @@ font-weight: 400;
 line-height: 150%; /* 30px */ 
 }
 
-section {
+.movie {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 12px;
-
 }
 
-section > figure {
+.movie > p {
     margin: 0;
 }
 
-section > figure > img {
+.movie > figure {
+    margin: 0;
+}
+
+.movie > figure > img {
     display: flex;    
     align-items: center;
     max-width: 100%;
