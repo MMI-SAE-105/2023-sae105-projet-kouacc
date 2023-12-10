@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/OLLHpiQA)
 - NOM : LALLEMAND
 - PRÉNOM : Maxence
-- URL du site : http://endless-rebirth.maxencelallemand.fr/
+- URL du site : http://endlessrebirth.maxencelallemand.fr/
 - URL FIGMA : https://www.figma.com/file/jW02aD7XWOUch7Je7RH5EW/Maquettes-projet-individuel-%E2%80%94-Maxence-LALLEMAND?type=design&node-id=1501%3A120&mode=design&t=dERARzJFuQaqBpO5-1
 
 # Structure de départ pour le projet individuel.
