@@ -1,0 +1,16 @@
+.article {
+
+}
+
+.article__writer {
+    background-color: #D9D9D9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 9px 0px;
+}
+
+.article__writer > p {
+    margin: 0px 17px;
+}
