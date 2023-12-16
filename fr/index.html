@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Endless Rebirth</title>
     <link rel="stylesheet" href="/src/css/pages/style.css">
 </head>
-
 <body>
     <header>
         <div class="navbar">
@@ -16,18 +14,27 @@
             </div>
             <div class="navbar__buttons">
                 <a href="en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></img></a>
-                <button><img src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
+                <button onclick="document.getElementById('navbar__menu').style.display = 'flex';"><img src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
             </div>
         </div>
-        <nav>
-            <ul>
+        <nav class="navbar__menu">
+            <div class="navbar__inside">
+                <div class="navbar__home">
+                    <a href="index.html">ENDLESS REBIRTH</a>
+                </div>
+                <div class="navbar__buttons">
+                    <a href="en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></img></a>
+                    <button onclick="document.getElementById('navbar__menu').style.display = 'none';"><img src="/public/icons/cross.svg" alt="Croix menu"></button>
+                </div>
+            </div>
+            <ul class="navbar__links">
                 <li><a href="/fr/articles/replica.html">Réplique</a></li>
                 <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
-                <li><a href="#">Hideaki Anno</a></li>
-                <li><a href="#">KOMM, SÜSSER TOD</a></li>
-                <li><a href="#">Neon Genesis Evangelion</a></li>
-                <li><a href="#">Filmographie</a></li>
-                <li><a href="#">Bibliographie</a></li>
+                <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
+                <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
+                <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
+                <li><a href="/fr/filmography.html">Filmographie</a></li>
+                <li><a href="/fr/bibliography.html">Bibliographie</a></li>
             </ul>
         </nav>
     </header>

@@ -43,23 +43,10 @@ header {
     border: none;
 }
 
-nav {
-    background-color: var(--Noir, #252525);
-    display: none;
-}
-
-nav > ul {
-    list-style: none;
-
-}
-
-nav > ul > li > a {
-    text-decoration: none;
-    color: #FFF;
-    /* Body 2 */
-    font-family: Lato;
-    font-size: var(--body-1);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 140%; /* 19.6px */
+.navbar__inside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 6.21px 13px 6.21px;
 }
