@@ -9,6 +9,7 @@ body, html {
 
 h1 {
     font-family: 'Times New Roman MT Std Bold Condensed';
+    font-size : var(--heading-1);
     text-transform: uppercase;
     padding-top: 29px;
     margin-top: 0;
@@ -25,7 +26,7 @@ h1 > span {
 h2 {
     font-family: 'Times New Roman MT Std Bold Condensed';
     color: #000;
-    font-size: 26px;
+    font-size: var(--heading-2);
     font-style: normal;
     font-weight: 700;
     line-height: 120%; /* 31.2px */
@@ -34,8 +35,8 @@ h2 {
 
 h3 {
     font-family: 'Lato';
-    font-style: normal;
     font-style: bold;
+    font-size: var(--heading-3);
     margin: 0;
 }
 
