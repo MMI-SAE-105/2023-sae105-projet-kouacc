@@ -4,6 +4,12 @@
     gap: 10px;
 }
 
+.article__section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .article__writer {
     background-color: #D9D9D9;
     border-radius: 4px;
