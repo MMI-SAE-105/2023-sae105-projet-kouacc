@@ -1,11 +1,21 @@
+
+
 .hero {
     color: var(--blanc, #fff);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), url('/public/img/hero.webp') lightgray 50% / cover no-repeat;
+    height: 564px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hero__img {
-    filter: blur(2.5px);
-    height: 50%;
-    position: relative;
-    background-position: center;
+.hero > h1 > span {
+    font-family: "Times New Roman MT Std Bold Condensed";
+}
+
+.hero > img {
+    width: 10%;
+    height: auto;
+    object-fit: cover;
 }

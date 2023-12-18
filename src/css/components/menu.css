@@ -20,7 +20,7 @@
     line-height: 140%; /* 19.6px */
 }
 
-.navbar__menu {
+#navbar__menu {
     background-color: var(--noir, #252525);
     position: fixed;
     top: 0;
@@ -29,4 +29,5 @@
     height: auto;
     display: none;
     flex-direction: column;
+    transition: .25s;
 }
