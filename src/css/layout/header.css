@@ -1,6 +1,9 @@
 header {
     background-color: var(--Noir, #252525);
     padding: 13px 6.21px 13px 6.21px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .navbar {
@@ -41,12 +44,4 @@ header {
 .navbar__buttons > button {
     background-color: transparent;
     border: none;
-}
-
-.navbar__inside {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding: 13px 6.21px 13px 6.21px;
 }

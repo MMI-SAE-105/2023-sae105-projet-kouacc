@@ -10,95 +10,106 @@
 </head>
 
 <body>
-
-    <body>
-        <header>
-            <div class="navbar">
-                <div class="navbar__home">
-                    <a href="/fr/index.html">ENDLESS REBIRTH</a>
-                </div>
-                <div class="navbar__buttons">
-                    <a href="/en/index.html"><img src="/public/icons/globe.svg"
-                            alt="Globe sélection de langue"></img></a>
-                    <button onclick="document.getElementById('navbar__menu').style.display = 'flex';"><img
-                            src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
-                </div>
+    <header x-data="{navmenu: false}">
+        <div class="navbar">
+            <div class="navbar__home">
+                <a href="/fr/index.html">ENDLESS REBIRTH</a>
             </div>
-            <nav id="navbar__menu">
-                <div class="navbar__inside">
-                    <div class="navbar__home">
-                        <a href="/fr/index.html">ENDLESS REBIRTH</a>
-                    </div>
-                    <div class="navbar__buttons">
-                        <a href="/en/index.html"><img src="/public/icons/globe.svg"
-                                alt="Globe sélection de langue"></img></a>
-                        <button onclick="document.getElementById('navbar__menu').style.display = 'none';"><img
-                                src="/public/icons/cross.svg" alt="Croix menu"></button>
-                    </div>
-                </div>
-                <ul class="navbar__links">
-                    <li><a href="/fr/articles/replica.html">Réplique</a></li>
-                    <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
-                    <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
-                    <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
-                    <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
-                    <li><a href="/fr/filmography.html">Filmographie</a></li>
-                    <li><a href="/fr/bibliography.html">Bibliographie</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="line"></div>
-            <div class="article container-2">
-                <section class="article__section">
-                    <h1>Komm, Süsser Tod</h1>
-                    <h2>"Komm, Süsser Tod, la destruction en musique</h2>
-                    <p>La musique dans le cinéma a le pouvoir de transcender les mots et les images, de provoquer des émotions profondes et de renforcer l'impact d'une scène. "Komm, Süsser Tod," la chanson emblématique de la bande originale du film d'animation japonais "The End of Evangelion," est un exemple frappant de cette capacité. Composée par Shiro Sagisu et interprétée par Arianne, cette pièce musicale joue un rôle crucial dans l'œuvre, offrant une expérience émotionnelle complexe et déroutante au spectateur. Dans cet article, nous plongerons dans le monde de "Komm, Süsser Tod," en explorant sa musique, ses paroles et son utilisation dans le film.</p>
-                </section>
-                <section class="article__section">
-                    <h3>"Komm, Süsser Tod"</h3>
-                    <figure>
-                        <img src="/public/img/music_1.webp" alt="">
-                        <figcaption>Les deux couvertures des interprétations de Komm Süsser Tod</figcaption>
-                    </figure>
-                    <p>"Komm, Süsser Tod" (en allemand, "Viens, douce mort") est une chanson fascinante et mélancolique qui se distingue par son mélange de styles musicaux. Elle mêle habilement des éléments du rock, de la musique classique et de la musique électronique pour créer une atmosphère unique. Les paroles, chantées en anglais, sont poignantes et énigmatiques, évoquant des thèmes de fin du monde, d'acceptation et de rédemption.</p>
-                    <p>La musique commence lentement avec des cordes et des chœurs sublimes, créant une atmosphère mystique et presque religieuse. Puis, elle évolue vers une section plus rythmée et rock, avec une utilisation habile de la guitare électrique et de la batterie. Cette fusion de styles crée une tension musicale qui reflète les émotions complexes des personnages et de l'histoire.</p>
-                </section>
-                <section class="article__section">
-                    <h3>Son utilisation</h3>
-                    <p>"Komm, Süsser Tod" est utilisée dans une scène cruciale de "The End of Evangelion" qui sert de point culminant de l'intrigue. Sans entrer dans les détails pour éviter les spoilers, la chanson accompagne une séquence visuellement et émotionnellement époustouflante. Elle amplifie l'intensité de l'action et des émotions des personnages. La juxtaposition de la musique avec les images crée une tension dramatique inoubliable, qui laisse une impression durable sur le spectateur.</p>
-                    <p>Le choix de cette chanson pour cette séquence est particulièrement pertinent, car les paroles de "Komm, Süsser Tod" reflètent les thèmes profonds du film. Elles évoquent la résignation, la perte, mais aussi une lueur d'espoir. La musique accompagne les personnages dans un voyage existentiel et métaphysique, créant un contraste émotionnel saisissant.</p>
-                    <iframe style="border-radius:12px"
-                        src="https://open.spotify.com/embed/track/0DI3WNmIyfi2GZLQwhYDQC?utm_source=generator" width="100%" height="352"
-                        frameBorder="0" allowfullscreen=""
-                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </section>
-                <section class="article__section">
-                    <h3>À retenir</h3>
-                    <p>"Komm, Süsser Tod" est bien plus qu'une simple chanson de film. Elle est un élément essentiel de l'expérience de "The End of Evangelion." La musique, avec sa fusion audacieuse de styles et ses paroles évocatrices, crée une atmosphère unique qui intensifie la narration et les émotions des personnages.</p>
-                    <p>Son utilisation au sein du film est une démonstration parfaite de la manière dont la musique peut devenir un personnage à part entière, influençant profondément la manière dont le public perçoit et comprend l'histoire. En fin de compte, "Komm, Süsser Tod" reste gravée dans la mémoire des cinéphiles en tant que mélodie inoubliable d'apocalypse et de rédemption.</p>
-                </section>  
-                <div class="article__writer">
-                    <p>Par Maxence LALLEMAND</p>
-                    <p>Publié le 25/10/2023 à 15h30</p>
-                </div>
+            <div class="navbar__buttons">
+                <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></img></a>
+                <button @click="navmenu = ! navmenu"><img src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
             </div>
-        </main>
-        <footer>
-            <ul>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="#">Glossaire</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Autres projets</a></li>
+        </div>
+        <nav class="navbar__menu" x-show="navmenu" x-collapse.duration.600ms>
+            <ul class="navbar__links">
+                <li><a href="/fr/articles/replica.html">Réplique</a></li>
+                <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
+                <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
+                <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
+                <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
+                <li><a href="/fr/filmography.html">Filmographie</a></li>
+                <li><a href="/fr/bibliography.html">Bibliographie</a></li>
             </ul>
-            <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a
-                    href="https://mmimontbeliard.com">département MMI de Montbéliard.</a></p>
-            <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
-            <div class="student-info">
-                <span>Maxence Lallemand</span>
-                <span>MMI 1 A1</span>
+        </nav>
+    </header>
+    <main>
+        <div class="line"></div>
+        <div class="article container-2">
+            <section class="article__section">
+                <h1>Komm, Süsser Tod</h1>
+                <h2>"Komm, Süsser Tod, la destruction en musique</h2>
+                <p>La musique dans le cinéma a le pouvoir de transcender les mots et les images, de provoquer des émotions
+                    profondes et de renforcer l'impact d'une scène. "Komm, Süsser Tod," la chanson emblématique de la bande
+                    originale du film d'animation japonais "The End of Evangelion," est un exemple frappant de cette
+                    capacité. Composée par Shiro Sagisu et interprétée par Arianne, cette pièce musicale joue un rôle
+                    crucial dans l'œuvre, offrant une expérience émotionnelle complexe et déroutante au spectateur. Dans cet
+                    article, nous plongerons dans le monde de "Komm, Süsser Tod," en explorant sa musique, ses paroles et
+                    son utilisation dans le film.</p>
+            </section>
+            <section class="article__section">
+                <h3>"Komm, Süsser Tod"</h3>
+                <figure>
+                    <img src="/public/img/music_1.webp" alt="">
+                    <figcaption>Les deux couvertures des interprétations de Komm Süsser Tod</figcaption>
+                </figure>
+                <p>"Komm, Süsser Tod" (en allemand, "Viens, douce mort") est une chanson fascinante et mélancolique qui se
+                    distingue par son mélange de styles musicaux. Elle mêle habilement des éléments du rock, de la musique
+                    classique et de la musique électronique pour créer une atmosphère unique. Les paroles, chantées en
+                    anglais, sont poignantes et énigmatiques, évoquant des thèmes de fin du monde, d'acceptation et de
+                    rédemption.</p>
+                <p>La musique commence lentement avec des cordes et des chœurs sublimes, créant une atmosphère mystique et
+                    presque religieuse. Puis, elle évolue vers une section plus rythmée et rock, avec une utilisation habile
+                    de la guitare électrique et de la batterie. Cette fusion de styles crée une tension musicale qui reflète
+                    les émotions complexes des personnages et de l'histoire.</p>
+            </section>
+            <section class="article__section">
+                <h3>Son utilisation</h3>
+                <p>"Komm, Süsser Tod" est utilisée dans une scène cruciale de "The End of Evangelion" qui sert de point
+                    culminant de l'intrigue. Sans entrer dans les détails pour éviter les spoilers, la chanson accompagne
+                    une séquence visuellement et émotionnellement époustouflante. Elle amplifie l'intensité de l'action et
+                    des émotions des personnages. La juxtaposition de la musique avec les images crée une tension dramatique
+                    inoubliable, qui laisse une impression durable sur le spectateur.</p>
+                <p>Le choix de cette chanson pour cette séquence est particulièrement pertinent, car les paroles de "Komm,
+                    Süsser Tod" reflètent les thèmes profonds du film. Elles évoquent la résignation, la perte, mais aussi
+                    une lueur d'espoir. La musique accompagne les personnages dans un voyage existentiel et métaphysique,
+                    créant un contraste émotionnel saisissant.</p>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/0DI3WNmIyfi2GZLQwhYDQC?utm_source=generator" width="100%"
+                    height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </section>
+            <section class="article__section">
+                <h3>À retenir</h3>
+                <p>"Komm, Süsser Tod" est bien plus qu'une simple chanson de film. Elle est un élément essentiel de
+                    l'expérience de "The End of Evangelion." La musique, avec sa fusion audacieuse de styles et ses paroles
+                    évocatrices, crée une atmosphère unique qui intensifie la narration et les émotions des personnages.</p>
+                <p>Son utilisation au sein du film est une démonstration parfaite de la manière dont la musique peut devenir
+                    un personnage à part entière, influençant profondément la manière dont le public perçoit et comprend
+                    l'histoire. En fin de compte, "Komm, Süsser Tod" reste gravée dans la mémoire des cinéphiles en tant que
+                    mélodie inoubliable d'apocalypse et de rédemption.</p>
+            </section>
+            <div class="article__writer">
+                <p>Par Maxence LALLEMAND</p>
+                <p>Publié le 25/10/2023 à 15h30</p>
             </div>
-        </footer>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="#">Glossaire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Autres projets</a></li>
+        </ul>
+        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département MMI de
+                Montbéliard.</a></p>
+        <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
+        <div class="student-info">
+            <span>Maxence Lallemand</span>
+            <span>MMI 1 A1</span>
+        </div>
+    </footer>
+</body>
 
 </html>

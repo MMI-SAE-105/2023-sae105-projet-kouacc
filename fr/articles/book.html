@@ -6,21 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neon Genesis Evangelion - Endless Rebirth</title>
     <link rel="stylesheet" href="/src/css/pages/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 
 <body>
-    <header>
+    <header x-data="{navmenu: false}">
         <div class="navbar">
             <div class="navbar__home">
                 <a href="/fr/index.html">ENDLESS REBIRTH</a>
             </div>
             <div class="navbar__buttons">
                 <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></img></a>
-                <button><img
-                        src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
+                <button @click="navmenu = ! navmenu"><img src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
             </div>
         </div>
+        <nav class="navbar__menu" x-show="navmenu" x-collapse.duration.600ms>
+            <ul class="navbar__links">
+                <li><a href="/fr/articles/replica.html">Réplique</a></li>
+                <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
+                <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
+                <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
+                <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
+                <li><a href="/fr/filmography.html">Filmographie</a></li>
+                <li><a href="/fr/bibliography.html">Bibliographie</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <div class="line"></div>

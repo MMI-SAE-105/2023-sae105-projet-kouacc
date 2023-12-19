@@ -10,122 +10,112 @@
 </head>
 
 <body>
-
-    <body>
-        <header>
-            <div class="navbar">
-                <div class="navbar__home">
-                    <a href="/fr/index.html">ENDLESS REBIRTH</a>
-                </div>
-                <div class="navbar__buttons">
-                    <a href="/en/index.html"><img src="/public/icons/globe.svg"
-                            alt="Globe sélection de langue"></img></a>
-                    <button onclick="document.getElementById('navbar__menu').style.display = 'flex';"><img
-                            src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
-                </div>
+    <header x-data="{navmenu: false}">
+        <div class="navbar">
+            <div class="navbar__home">
+                <a href="/fr/index.html">ENDLESS REBIRTH</a>
             </div>
-            <nav id="navbar__menu">
-                <div class="navbar__inside">
-                    <div class="navbar__home">
-                        <a href="/fr/index.html">ENDLESS REBIRTH</a>
-                    </div>
-                    <div class="navbar__buttons">
-                        <a href="/en/index.html"><img src="/public/icons/globe.svg"
-                                alt="Globe sélection de langue"></img></a>
-                        <button onclick="document.getElementById('navbar__menu').style.display = 'none';"><img
-                                src="/public/icons/cross.svg" alt="Croix menu"></button>
-                    </div>
-                </div>
-                <ul class="navbar__links">
-                    <li><a href="/fr/articles/replica.html">Réplique</a></li>
-                    <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
-                    <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
-                    <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
-                    <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
-                    <li><a href="/fr/filmography.html">Filmographie</a></li>
-                    <li><a href="/fr/bibliography.html">Bibliographie</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <div class="line"></div>
-            <div class="article container-2">
-                <section class="article__section">
-                    <h1>The End of Evangelion</h1>
-                    <h2>The End of Evangelion : une révolution du monde de l’animation</h2>
-                    <p>Le film d'animation "The End of Evangelion" est une œuvre qui a marqué l'histoire de l’animation japonaise. Réalisé par Hideaki Anno et sorti en 1997, ce long métrage est la conclusion épique de la série culte "Neon Genesis Evangelion." À travers un mélange complexe de philosophie, d'action, de symbolisme et de psychologie, "The End of Evangelion" pousse les limites du genre mecha et offre une expérience cinématographique inoubliable. Dans cet article, nous plongerons dans le contenu de ce film révolutionnaire et examinerons son impact sur l'industrie cinématographique.</p>
-                </section>
-                <section class="article__section">
-                    <h3>Un film sensible</h3>
-                    <figure>
-                        <img src="/public/img/movie_1.webp" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                    <p>Dans le contexte du film, "La fatalité de l'extinction" fait référence à l'idée que l'humanité
-                        est confrontée à une apocalypse imminente. L'histoire tourne autour de l'arrivée des Anges, des
-                        créatures mystérieuses menaçant l'existence de l'humanité. L'extinction semble inévitable, et
-                        cela crée un sentiment de désespoir.</p>
-                </section>
-                <section class="article__section">
-                    <h3>La joie de la renaissance</h3>
-                    <p>La "joie de la renaissance" évoque l'idée que la fin du monde peut aussi être interprétée comme
-                        une opportunité de renouveau. Dans le contexte du film, il s'agit de la possibilité de
-                        redémarrer, de réinventer l'humanité, et de trouver un sens à une existence chaotique.</p>
-                </section>
-                <section class="article__section">
-                    <h3>Complexité des thèmes</h3>
-                    <p>Ce dialogue souligne la dualité constante des thèmes dans The End of Evangelion. Il pose des
-                        questions sur l'identité, l'individualité, et l'existence. Le film aborde également des thèmes
-                        comme la solitude, la dépression, l'angoisse existentielle, et l'importance des relations
-                        humaines.</p>
-                    <figure>
-                        <img src="/public/img/replica_2.webp" alt="">
-                        <figcaption></figcaption>
-                    </figure>
-                </section>
-                <section class="article__section">
-                    <h3>Références religieuses et psychanalytiques</h3>
-                    <p>En fin de compte, cette réplique rappelle au spectateur que la vie est un mélange de souffrance
-                        et de bonheur, de destruction et de renaissance. Cela incite à la réflexion sur la nature de
-                        l'existence humaine, sur la façon dont nous affrontons nos peurs et nos défis, et sur la
-                        possibilité de trouver un sens dans un monde chaotique.</p>
-                    <figure>
-                        <img src="/public/img/replica_3.webp" alt="">
-                        <figcaption>Après le 3ème impact</figcaption>
-                    </figure>
-                </section>
-                <section class="article__section">
-                    <h3>À retenir</h3>
-                    <p>Dans l'ensemble, la réplique "La fatalité de l’extinction est aussi la joie de la renaissance"
-                        dans The End of Evangelion est une invitation à la réflexion sur les thèmes existentiels
-                        profonds abordés tout au long du film. Elle incarne la complexité de l'œuvre et la manière dont
-                        elle pousse les spectateurs à remettre en question leur propre compréhension de la vie, de la
-                        mort et de la résilience humaine.</p>
-                </section>
-                <div class="article__link">
-                    <p>Lisez ensuite plus de détails sur le <a href="/fr/articles/movie.html">film</a></p>
-                </div>
-                <div class="article__writer">
-                    <p>Par Maxence LALLEMAND</p>
-                    <p>Publié le 25/10/2023 à 15h30</p>
-                </div>
+            <div class="navbar__buttons">
+                <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></img></a>
+                <button @click="navmenu = ! navmenu"><img src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
             </div>
-        </main>
-        <footer>
-            <ul>
-                <li><a href="about.html">À propos</a></li>
-                <li><a href="#">Glossaire</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#">Autres projets</a></li>
+        </div>
+        <nav class="navbar__menu" x-show="navmenu" x-collapse.duration.600ms>
+            <ul class="navbar__links">
+                <li><a href="/fr/articles/replica.html">Réplique</a></li>
+                <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
+                <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
+                <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
+                <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
+                <li><a href="/fr/filmography.html">Filmographie</a></li>
+                <li><a href="/fr/bibliography.html">Bibliographie</a></li>
             </ul>
-            <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a
-                    href="https://mmimontbeliard.com">département MMI de Montbéliard.</a></p>
-            <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
-            <div class="student-info">
-                <span>Maxence Lallemand</span>
-                <span>MMI 1 A1</span>
+        </nav>
+    </header>
+    <main>
+        <div class="line"></div>
+        <div class="article container-2">
+            <section class="article__section">
+                <h1>The End of Evangelion</h1>
+                <h2>The End of Evangelion : une révolution du monde de l’animation</h2>
+                <p>Le film d'animation "The End of Evangelion" est une œuvre qui a marqué l'histoire de l’animation
+                    japonaise. Réalisé par Hideaki Anno et sorti en 1997, ce long métrage est la conclusion épique de la
+                    série culte "Neon Genesis Evangelion." À travers un mélange complexe de philosophie, d'action, de
+                    symbolisme et de psychologie, "The End of Evangelion" pousse les limites du genre mecha et offre une
+                    expérience cinématographique inoubliable. Dans cet article, nous plongerons dans le contenu de ce film
+                    révolutionnaire et examinerons son impact sur l'industrie cinématographique.</p>
+            </section>
+            <section class="article__section">
+                <h3>Un film sensible</h3>
+                <figure>
+                    <img src="/public/img/movie_1.webp" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p>Dans le contexte du film, "La fatalité de l'extinction" fait référence à l'idée que l'humanité
+                    est confrontée à une apocalypse imminente. L'histoire tourne autour de l'arrivée des Anges, des
+                    créatures mystérieuses menaçant l'existence de l'humanité. L'extinction semble inévitable, et
+                    cela crée un sentiment de désespoir.</p>
+            </section>
+            <section class="article__section">
+                <h3>La joie de la renaissance</h3>
+                <p>La "joie de la renaissance" évoque l'idée que la fin du monde peut aussi être interprétée comme
+                    une opportunité de renouveau. Dans le contexte du film, il s'agit de la possibilité de
+                    redémarrer, de réinventer l'humanité, et de trouver un sens à une existence chaotique.</p>
+            </section>
+            <section class="article__section">
+                <h3>Complexité des thèmes</h3>
+                <p>Ce dialogue souligne la dualité constante des thèmes dans The End of Evangelion. Il pose des
+                    questions sur l'identité, l'individualité, et l'existence. Le film aborde également des thèmes
+                    comme la solitude, la dépression, l'angoisse existentielle, et l'importance des relations
+                    humaines.</p>
+                <figure>
+                    <img src="/public/img/replica_2.webp" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
+            <section class="article__section">
+                <h3>Références religieuses et psychanalytiques</h3>
+                <p>En fin de compte, cette réplique rappelle au spectateur que la vie est un mélange de souffrance
+                    et de bonheur, de destruction et de renaissance. Cela incite à la réflexion sur la nature de
+                    l'existence humaine, sur la façon dont nous affrontons nos peurs et nos défis, et sur la
+                    possibilité de trouver un sens dans un monde chaotique.</p>
+                <figure>
+                    <img src="/public/img/replica_3.webp" alt="">
+                    <figcaption>Après le 3ème impact</figcaption>
+                </figure>
+            </section>
+            <section class="article__section">
+                <h3>À retenir</h3>
+                <p>Dans l'ensemble, la réplique "La fatalité de l’extinction est aussi la joie de la renaissance"
+                    dans The End of Evangelion est une invitation à la réflexion sur les thèmes existentiels
+                    profonds abordés tout au long du film. Elle incarne la complexité de l'œuvre et la manière dont
+                    elle pousse les spectateurs à remettre en question leur propre compréhension de la vie, de la
+                    mort et de la résilience humaine.</p>
+            </section>
+            <div class="article__link">
+                <p>Lisez ensuite plus de détails sur le <a href="/fr/articles/movie.html">film</a></p>
             </div>
-        </footer>
-    </body>
+            <div class="article__writer">
+                <p>Par Maxence LALLEMAND</p>
+                <p>Publié le 25/10/2023 à 15h30</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="#">Glossaire</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Autres projets</a></li>
+        </ul>
+        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département MMI de
+                Montbéliard.</a></p>
+        <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
+        <div class="student-info">
+            <span>Maxence Lallemand</span>
+            <span>MMI 1 A1</span>
+        </div>
+    </footer>
+</body>
 
 </html>

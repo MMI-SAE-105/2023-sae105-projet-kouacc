@@ -8,26 +8,17 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body>
-    <header>
+    <header x-data="{navmenu: false}">
         <div class="navbar">
             <div class="navbar__home">
                 <a href="/fr/index.html">ENDLESS REBIRTH</a>
             </div>
             <div class="navbar__buttons">
                 <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></img></a>
-                <button onclick="document.getElementById('navbar__menu').style.display = 'flex';"><img src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
+                <button @click="navmenu = ! navmenu"><img src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
             </div>
         </div>
-        <nav id="navbar__menu">
-            <div class="navbar__inside">
-                <div class="navbar__home">
-                    <a href="/fr/index.html">ENDLESS REBIRTH</a>
-                </div>
-                <div class="navbar__buttons">
-                    <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></img></a>
-                    <button onclick="document.getElementById('navbar__menu').style.display = 'none';"><img src="/public/icons/cross.svg" alt="Croix menu"></button>
-                </div>
-            </div>
+        <nav class="navbar__menu" x-show="navmenu" x-collapse.duration.600ms>
             <ul class="navbar__links">
                 <li><a href="/fr/articles/replica.html">Réplique</a></li>
                 <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>

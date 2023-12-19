@@ -22,12 +22,11 @@
 
 .navbar__menu {
     background-color: var(--noir, #252525);
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
-    transition: .25s;
+    padding-left: 20px;
 }
