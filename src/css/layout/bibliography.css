@@ -1,0 +1,25 @@
+.bibliography__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-left: 8px dashed var(--eva01-a1);
+}
+
+.bibliography__list > li {
+    padding-left: 20px;
+}
+
+.bibliography__list figure {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.bibliography__list figcaption {
+    font-size: var(--body-2);
+    font-family: Lato;
+}
