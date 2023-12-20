@@ -10,6 +10,7 @@ body, html {
 h1 {
     font-family: 'Times New Roman MT Std Bold Condensed';
     font-size : var(--heading-1);
+    font-style: normal;
     text-transform: uppercase;
     padding-top: 29px;
     margin-top: 0;
