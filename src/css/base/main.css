@@ -9,12 +9,18 @@ body, html {
 
 h1 {
     font-family: 'Times New Roman MT Std Bold Condensed';
-    font-size : var(--heading-1);
-    font-style: normal;
+    font-size: var(--heading-1);
+    font-weight: 600;
     text-transform: uppercase;
     padding-top: 29px;
     margin-top: 0;
     margin-bottom: 7px;
+}
+
+@supports (display: -webkit-flex) {
+    h1 {
+        font-weight: 600;
+    }
 }
 
 h1 > span {
@@ -29,9 +35,15 @@ h2 {
     color: #000;
     font-size: var(--heading-2);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 120%; /* 31.2px */
     margin: 0;
+}
+
+@supports (display: -webkit-flex) {
+    h2 {
+        font-weight: 600;
+    }
 }
 
 h3 {
