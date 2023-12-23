@@ -30,7 +30,6 @@
     height: 34px;
     justify-content: center;
     align-items: center;
-    gap: 17px;
     background: var(--Noir, #252525);
     box-shadow: 4px 4px 0px 0px #765898;
     border: 0;

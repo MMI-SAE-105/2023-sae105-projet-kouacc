@@ -7,6 +7,7 @@
 .movie {
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
 .movie > figure {
@@ -19,21 +20,5 @@
     text-align: left;
     font-family: Lato;
     font-size: var(--body-1);
-}
-
-@media screen and (min-width: 768px) {
-    .movie > figure > img {
-        width: 50%;
-        height: auto;
-    }
-    
-}
-
-/* adapt class movies to flex-wrap wrap depending on the screen size */
-@media screen and (min-width: 768px) {
-    .movies {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
 }
 
