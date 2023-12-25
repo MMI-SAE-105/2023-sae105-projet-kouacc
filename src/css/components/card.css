@@ -1,0 +1,46 @@
+.card {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.card__text {
+    background: var(--Noir, #252525);
+    font-family: Lato;
+    font-size: var(--small-text);
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: auto;
+    width: 70%;
+    position: relative;
+    bottom: 100px;
+}
+
+.card__color1 {
+    box-shadow: 6px 6px 2px 0px var(--eva01-a1);
+}
+
+.card__color2 {
+    box-shadow: 6px 6px 2px 0px var(--eva01-a2);
+}
+
+.card__text p {
+    margin: 0;
+    color: var(--blanc);
+}
+
+.card__text a {
+    text-align: start;
+    color: var(--blanc, #A6CF59);
+    font-size: var(--button);
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    /* 16.8px */
+    letter-spacing: 1.8px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
