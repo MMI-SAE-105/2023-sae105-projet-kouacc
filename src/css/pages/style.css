@@ -1,33 +1,28 @@
+/* Polices GFonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
+/* Variables */
 @import url(/src/css/utils/variables.css);
 
+/* Normalize */
 @import url(/src/css/normalize/normalize.css);
 
+/* Dossier base */
 @import url(/src/css/base/main.css);
-
 @import url(/src/css/base/media.css);
 
+/* Dossier layout */
 @import url(/src/css/layout/footer.css);
-
 @import url(/src/css/layout/header.css);
-
-@import url(/src/css/components/card.css);
-
-@import url(/src/css/components/button.css);
-
-@import url(/src/css/components/contact.css);
-
-@import url(/src/css/components/movie.css);
-
 @import url(/src/css/layout/filmography.css);
-
 @import url(/src/css/layout/hero.css);
-
 @import url(/src/css/layout/article.css);
-
 @import url(/src/css/layout/home.css);
+@import url(/src/css/layout/bibliography.css);
 
+/* Dossier components */
+@import url(/src/css/components/card.css);
+@import url(/src/css/components/button.css);
+@import url(/src/css/components/contact.css);
+@import url(/src/css/components/movie.css);
 @import url(/src/css/components/menu.css);
-
-@import url(/src/css/layout/bibliography.css)
