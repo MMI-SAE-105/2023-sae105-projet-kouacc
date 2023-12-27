@@ -23,13 +23,6 @@ h1 {
     }
 }
 
-h1 > span {
-    text-decoration-line: underline;
-    text-decoration-style: "solid";
-    text-decoration-color: #F25E5E;
-    text-decoration-thickness: 24px;
-}
-
 h2 {
     font-family: 'Times New Roman MT Std Bold Condensed';
     color: #000;
