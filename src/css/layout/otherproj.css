@@ -1,0 +1,29 @@
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.project-card {
+    background-color: var(--gris);
+    list-style: none;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card p {
+    font-size: var(--body-2);
+    font-family: Lato;
+    margin: 0;
+
+}
+
+.project-card__name {
+    display: flex;
+    flex-direction: column;
+}

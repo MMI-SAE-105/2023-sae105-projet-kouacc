@@ -19,6 +19,7 @@
 @import url(/src/css/layout/article.css);
 @import url(/src/css/layout/home.css);
 @import url(/src/css/layout/bibliography.css);
+@import url(/src/css/layout/otherproj.css);
 
 /* Dossier components */
 @import url(/src/css/components/card.css);

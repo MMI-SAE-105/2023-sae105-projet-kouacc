@@ -46,3 +46,17 @@
     text-decoration-line: underline;
     text-transform: uppercase;
 }
+
+.project-card__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Noir, #252525);
+    box-shadow: 4px 4px 0px 0px #765898;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Lato;
+    font-size: (--button);
+}
