@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliographie - Endless Rebirth</title>
+    <title>Autres projets - Endless Rebirth</title>
     <link rel="stylesheet" href="/src/css/pages/style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
+
 <body>
     <header x-data="{navmenu: false}">
         <div class="navbar">
@@ -16,7 +18,8 @@
             </div>
             <div class="navbar__buttons">
                 <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></a>
-                <button class="navbar__button-menu" :class="navmenu && 'navbar__button-open'" @click="navmenu = ! navmenu">
+                <button class="navbar__button-menu" :class="navmenu && 'navbar__button-open'"
+                    @click="navmenu = ! navmenu">
                     <span class="navbar__button-line line1"></span>
                     <span class="navbar__button-line line2"></span>
                     <span class="navbar__button-line line3"></span>
@@ -38,34 +41,20 @@
     <main>
         <div class="line"></div>
         <div class="content container-1">
-            <h1>Bibliographie</h1>
-            <p>Découvrez aussi une <a href="/fr/filmography.html">liste de films</a> de l'univers d'Evangelion</p>
-            <ul class="bibliography__list">
-                <li>
-                    <figure>
-                        <figcaption>Neon Genesis Evangelion, le grand livre, Glénat 1999</figcaption>
-                        <img src="/public/img/biblio_1.webp" alt="Couverture de l'artbook Evangelion">
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption>Neon Genesis Evangelion, le renouveau de l'animation japonaise, Pix'n Love 2021</figcaption>
-                        <img src="/public/img/biblio_2.webp" alt="Couverture du livre Pix'n Love Evangelion">
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption>Neon Genesis Evangelion Perfect Edition, Glénat 2022</figcaption>
-                        <img src="/public/img/biblio_3.webp" alt="Couverture de NGE Perfect Edition">
-                    </figure>
-                </li>
-                <li>
-                    <figure>
-                        <figcaption>La saga Evangelion, l'œ uvre d'une vie, Third Éditions 2023</figcaption>
-                        <img src="/public/img/biblio_4.webp" alt="Couverture du livre Third Éditions Evangelion">
-                    </figure>
-                </li>
-            </ul>
+            <h1>Glossaire</h1>
+            <section>
+                <h4>Personnages</h4>
+                <p>Shinji Ikari : Le protagoniste principal de la série, Shinji est un jeune pilote d'Eva, et ses luttes émotionnelles sont au cœur de l'histoire.</p>
+                <p>Rei Ayanami : Un personnage clé de l'histoire, Rei est un clone qui possède des liens profonds avec les Eva et l'intrigue globale.</p>
+                <p>Asuka Langley Soryu : Une autre pilote d'Eva, Asuka est un personnage complexe dont le développement est suivi tout au long du film.</p>
+            </section>
+            <section>
+                <h4>Univers</h4>
+                <p>Evangelion : Les Eva sont des méchas bio-robotiques géants conçus pour combattre les Anges, des entités mystérieuses qui menacent l'humanité. Les Eva sont également le point central de l'intrigue et des personnages du film.</p>
+                <p>Anges : Les Anges sont des créatures extraterrestres qui attaquent la Terre. Chacun d'entre eux a des capacités uniques et représentent une menace existentielle.</p>
+                <p>NERV : Une organisation militaire et scientifique qui combat les Anges en utilisant les Eva. Elle est le centre de l'action dans le film.</p>
+                <p>Instrumentalité : Il s'agit du processus de fusion de l'humanité dans un état de conscience collective, cherché par plusieurs personnages du film.</p>
+            </section>
         </div>
     </main>
     <footer>
@@ -75,8 +64,8 @@
             <li><a href="/fr/contact.html">Contact</a></li>
             <li><a href="/fr/otherproj.html">Autres projets</a></li>
         </ul>
-        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département MMI de
-                Montbéliard.</a></p>
+        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département
+                MMI de Montbéliard.</a></p>
         <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
         <div class="student-info">
             <span>Maxence Lallemand</span>

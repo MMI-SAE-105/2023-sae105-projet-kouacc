@@ -46,6 +46,17 @@ h3 {
     margin: 0;
 }
 
+h4 {
+    color: #000;
+    
+    /* Body 1 */
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+     font-weight: 400;
+     line-height: 150%;
+}
+
 .socials {
     list-style: none;
     display: flex;
