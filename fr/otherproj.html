@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
+
 <body>
     <header x-data="{navmenu: false}">
         <div class="navbar">
@@ -16,7 +18,8 @@
             </div>
             <div class="navbar__buttons">
                 <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></a>
-                <button class="navbar__button-menu" :class="navmenu && 'navbar__button-open'" @click="navmenu = ! navmenu">
+                <button class="navbar__button-menu" :class="navmenu && 'navbar__button-open'"
+                    @click="navmenu = ! navmenu">
                     <span class="navbar__button-line line1"></span>
                     <span class="navbar__button-line line2"></span>
                     <span class="navbar__button-line line3"></span>
@@ -38,22 +41,50 @@
     <main>
         <div class="line"></div>
         <div class="content container-1">
-            <h1>Contact</h1>
-            <p>Si jamais vous avez des recommendations, des changements à suggérer ou tout simplement des avis à partager,
-                remplissez le formulaire ci-dessous.</p>
-            <form class="contact-form">
-                <label for="firstname" class="contact-form__label">Prénom</label>
-                <input type="text" name="name" id="firstname" class="contact-form__input" placeholder="Pierre">
-                <label for="lastname" class="contact-form__label">Nom</label>
-                <input type="text" name="name" id="lastname" class="contact-form__input" placeholder="DUPONT">
-                <label for="mail" class="contact-form__label">Adresse e-mail</label>
-                <input type="email" name="mail" id="mail" class="contact-form__input" placeholder="exemple@mail.com">
-                <label for="message" class="contact-form__label">Message</label>
-                <textarea name="message" cols="30" rows="10" id="message" class="contact-form__input" placeholder="Votre message"></textarea>
-                <div class="contact-form__send">
-                    <button class="contact-form__button">Envoyer</button>
-                </div>
-            </form>
+            <h1>Autres projets</h1>
+            <p>Voici une liste d’autres projets d’élèves du groupe MMi A1 :</p>
+            <ul>
+                <li class="project-cardproject-card">
+                    <p>Benjamin Bisch</p>
+                    <p></p>
+                    <a href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <p>Hugo Collin</p>
+                    <p></p>
+                    <a href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <p>Romain Grosjean</p>
+                    <p></p>
+                    <a href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <p>Édouard Hashimoto</p>
+                    <p></p>
+                    <a href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <p>Claude Malanda Samba</p>
+                    <p></p>
+                    <a href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <p>Océane Robert</p>
+                    <p></p>
+                    <a href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <p>Mélissa Poilâne</p>
+                    <p></p>
+                    <a href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <p>Éthan Schmitt</p>
+                    <p></p>
+                    <a href="">Accéder</a>
+                </li>
+            </ul>
         </div>
     </main>
     <footer>
@@ -63,7 +94,8 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="otherproj.html">Autres projets</a></li>
         </ul>
-        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département MMI de Montbéliard.</a></p>
+        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département
+                MMI de Montbéliard.</a></p>
         <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
         <div class="student-info">
             <span>Maxence Lallemand</span>
@@ -71,4 +103,5 @@
         </div>
     </footer>
 </body>
+
 </html>
