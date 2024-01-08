@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres projets - Endless Rebirth</title>
+    <link rel="stylesheet" href="/src/css/pages/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header x-data="{navmenu: false}">
+        <div class="navbar">
+            <div class="navbar__home">
+                <a href="/fr/index.html">ENDLESS REBIRTH</a>
+            </div>
+            <div class="navbar__buttons">
+                <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></a>
+                <button class="navbar__button-menu" :class="navmenu && 'navbar__button-open'"
+                    @click="navmenu = ! navmenu">
+                    <span class="navbar__button-line line1"></span>
+                    <span class="navbar__button-line line2"></span>
+                    <span class="navbar__button-line line3"></span>
+                </button>
+            </div>
+        </div>
+        <nav class="navbar__menu" x-show="navmenu" x-collapse.duration.600ms>
+            <ul class="navbar__links">
+                <li><a href="/fr/articles/replica.html">Réplique</a></li>
+                <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
+                <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
+                <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
+                <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
+                <li><a href="/fr/filmography.html">Filmographie</a></li>
+                <li><a href="/fr/bibliography.html">Bibliographie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="line"></div>
+        <div class="content container-1">
+            <h1>Autres projets</h1>
+            <p>Voici une liste d’autres projets d’élèves du groupe MMi A1 :</p>
+            <ul class="project-list">
+                <li class="project-card">
+                    <div class="project-card__name">
+                        <p>Benjamin Bisch</p>
+                        <p>?</p>
+                    </div>
+                    <a class="project-card__link" href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <div class="project-card__name">
+                        <p>Hugo Collin</p>
+                        <p>L’école des sortilèges</p>
+                    </div>
+                    <a class="project-card__link" href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <div class="project-card__name">
+                        <p>Romain Grosjean</p>
+                        <p>Life Finds a Way</p>
+                    </div>
+                    <a class="project-card__link" href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <div class="project-card__name">
+                        <p>Édouard Hashimoto</p>
+                        <p>Bibliothèque Magique</p>
+                    </div>
+                    <a class="project-card__link" href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <div class="project-card__name">
+                        <p>Claude Malanda Samba</p>
+                        <p>Kulture</p>
+                    </div>
+                    <a class="project-card__link" href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <div class="project-card__name">
+                        <p>Océane Robert</p>
+                        <p>Instant clé</p>
+                    </div>
+                    <a class="project-card__link" href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <div class="project-card__name">
+                        <p>Mélissa Poilâne</p>
+                        <p>Là où l’on va, on n’a pas besoin de route</p>
+                    </div>
+                    <a class="project-card__link" href="">Accéder</a>
+                </li>
+                <li class="project-card">
+                    <div class="project-card__name">
+                        <p>Éthan Schmitt</p>
+                        <p>ShermanLegends</p>
+                    </div>
+                    <a class="project-card__link" href="">Accéder</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="/fr/about.html">À propos</a></li>
+            <li><a href="/fr/glossary.html">Glossaire</a></li>
+            <li><a href="/fr/contact.html">Contact</a></li>
+            <li><a href="/fr/otherproj.html">Autres projets</a></li>
+        </ul>
+        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département
+                MMI de Montbéliard.</a></p>
+        <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
+        <div class="student-info">
+            <span>Maxence Lallemand</span>
+            <span>MMI 1 A1</span>
+        </div>
+    </footer>
+</body>
+
+</html>

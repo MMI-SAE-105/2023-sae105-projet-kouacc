@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmographie - Endless Rebirth</title>
+    <link rel="stylesheet" href="/src/css/pages/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header x-data="{navmenu: false}">
+        <div class="navbar">
+            <div class="navbar__home">
+                <a href="/fr/index.html">ENDLESS REBIRTH</a>
+            </div>
+            <div class="navbar__buttons">
+                <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></a>
+                <button class="navbar__button-menu" :class="navmenu && 'navbar__button-open'" @click="navmenu = ! navmenu">
+                    <span class="navbar__button-line line1"></span>
+                    <span class="navbar__button-line line2"></span>
+                    <span class="navbar__button-line line3"></span>
+                </button>
+            </div>
+        </div>
+        <nav class="navbar__menu" x-show="navmenu" x-collapse.duration.600ms>
+            <ul class="navbar__links">
+                <li><a href="/fr/articles/replica.html">Réplique</a></li>
+                <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
+                <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
+                <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
+                <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
+                <li><a href="/fr/filmography.html">Filmographie</a></li>
+                <li><a href="/fr/bibliography.html">Bibliographie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="line"></div>
+        <div class="content container-1">
+            <h1>Filmographie</h1>
+            <p>Découvrez aussi une <a href="bibliography.html">liste de livres</a> de l’univers d’Evangelion</p>
+            <div class="movies">
+                <div class="movie container-2">
+                    <figure>
+                        <img src="/public/img/evadeath.webp" alt="Affiche Evangelion Death and Rebirth">
+                        <figcaption>Neon Genesis Evangelion: Death and Rebirth</figcaption>
+                    </figure>
+                    <p>Un film complexe qui résume les événements clés de la série tout en ajoutant de nouvelles perspectives, préparant le terrain pour le dénouement épique.</p>
+                    <a href="https://www.imdb.com/title/tt0169880/?ref_=ext_shr_lnk" class="movie-info__button">Plus de détails sur IMDB</a>
+                </div>
+                <div class="movie container-2">
+                    <figure>
+                        <img src="/public/img/eva10.webp" alt="Affiche Evangelion 1.0">
+                        <figcaption>Evangelion: 1.0 You Are (Not) Alone.</figcaption>
+                    </figure>
+                    <p>Le début d’une nouvelle saga, définissant l'histoire de NERV et de ses pilotes d'Eva, offrant une expérience visuellement époustouflante de la lutte contre des monstres titanesques.</p>
+                    <a href="https://www.imdb.com/title/tt0923811/?ref_=ext_shr_lnk" class="movie-info__button">Plus de détails sur IMDB</a>
+                </div>
+                <div class="movie container-2">
+                    <figure>
+                        <img src="/public/img/eva20.webp" alt="Affiche Evangelion 2.0">
+                        <figcaption>Evangelion: 2.0 You Can (Not) Advance.</figcaption>
+                    </figure>
+                    <p>Les mystères s'intensifient alors que de nouveaux personnages et des Evas améliorées se battent contre des anges encore plus puissants, tout en explorant les relations complexes entre les protagonistes.</p>
+                    <a href="https://www.imdb.com/title/tt0860906/?ref_=ext_shr_lnk" class="movie-info__button">Plus de détails sur IMDB</a>
+                </div>
+                <div class="movie container-2">
+                    <figure>
+                        <img src="/public/img/eva30.webp" alt="Affiche Evangelion 3.0">
+                        <figcaption>Evangelion: 3.0 You Can (Not) Redo.</figcaption>
+                    </figure>
+                    <p>Une plongée profonde dans l'inconnu, ce film se déroule après un saut temporel majeur, montrant un monde déchiré par les conséquences des choix passés.</p>
+                    <a href="https://www.imdb.com/title/tt0860907/?ref_=ext_shr_lnk" class="movie-info__button">Plus de détails sur IMDB</a>
+                </div>
+                <div class="movie container-2">
+                    <figure>
+                        <img src="/public/img/eva3010.webp" alt="Affiche Evangelion 3.0+1.0">
+                        <figcaption>Evangelion: 3.0+1.0 Thrice Upon a Time</figcaption>
+                    </figure>
+                    <p>Le dernier chapitre de la saga apporte des réponses tant attendues et conclut l'épopée en apportant une nouvelle conclusion aux destins des personnages et du monde.</p>
+                    <a href="https://www.imdb.com/title/tt2458948/?ref_=ext_shr_lnk" class="movie-info__button">Plus de détails sur IMDB</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="/fr/about.html">À propos</a></li>
+            <li><a href="/fr/glossary.html">Glossaire</a></li>
+            <li><a href="/fr/contact.html">Contact</a></li>
+            <li><a href="/fr/otherproj.html">Autres projets</a></li>
+        </ul>
+        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département
+                MMI de Montbéliard.</a></p>
+        <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
+        <div class="student-info">
+            <span>Maxence Lallemand</span>
+            <span>MMI 1 A1</span>
+        </div>
+    </footer>
+</body>
+
+</html>

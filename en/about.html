@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Endless Rebirth</title>
+    <link rel="stylesheet" href="/src/css/pages/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <header x-data="{navmenu: false}">
+        <div class="navbar">
+            <div class="navbar__home">
+                <a href="/fr/index.html">ENDLESS REBIRTH</a>
+            </div>
+            <div class="navbar__buttons">
+                <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></a>
+                <button class="navbar__button-menu" :class="navmenu && 'navbar__button-open'" @click="navmenu = ! navmenu">
+                    <span class="navbar__button-line line1"></span>
+                    <span class="navbar__button-line line2"></span>
+                    <span class="navbar__button-line line3"></span>
+                </button>
+            </div>
+        </div>
+        <nav class="navbar__menu" x-show="navmenu" x-collapse.duration.600ms>
+            <ul class="navbar__links">
+                <li><a href="/fr/articles/replica.html">Réplique</a></li>
+                <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
+                <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
+                <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
+                <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
+                <li><a href="/fr/filmography.html">Filmographie</a></li>
+                <li><a href="/fr/bibliography.html">Bibliographie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="line"></div>
+        <div class="content container-1">
+            <h1>À propos</h1>
+            <p>Je m’appelle Maxence LALLEMAND, étudiant de 1ère année en BUT MMi. Ce site a été créé dans le cadre d’un devoir
+            pédagogique au sein de l’établissement.</p>
+            <h3>Mon site</h3>
+            <p>Mon projet a pour but de présenter au maximum Neon Genesis Evangelion et tous les éléments qui relient cette série, tout
+            cela à travers des articles et contenus multimédias sur la série.</p>
+            <h3>Me joindre</h3>
+            <p>Vous pouvez me joindre sur les réseaux sociaux suivants et par e-mail. Je répondrai assez rapidement, pensez à être
+            clair et précis en me contactant.</p>
+            <ul class="socials">
+                <li><a href="https://github.com/kouacc"><img src="/public/icons/github.svg" alt="Logo Github"></a></li>
+                <li><a href="https://twitter.com/kouacc02"><img src="/public/icons/twitter.svg" alt="Logo Twitter"></a></li>
+                <li><a href="https://www.instagram.com/max__mp4/"><img src="/public/icons/instagram.svg" alt="Logo Instagram"></a></li>
+                <li><a href="mailto:maxence.lallemand0@gmail.com"><img src="/public/icons/envelope-solid.svg" alt="Enveloppe e-mail"></a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="/fr/about.html">À propos</a></li>
+            <li><a href="/fr/glossary.html">Glossaire</a></li>
+            <li><a href="/fr/contact.html">Contact</a></li>
+            <li><a href="/fr/otherproj.html">Autres projets</a></li>
+        </ul>
+        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département
+                MMI de Montbéliard.</a></p>
+        <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
+        <div class="student-info">
+            <span>Maxence Lallemand</span>
+            <span>MMI 1 A1</span>
+        </div>
+    </footer>
+</body>
+
+</html>
