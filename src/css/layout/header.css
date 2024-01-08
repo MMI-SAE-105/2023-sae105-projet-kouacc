@@ -41,7 +41,48 @@ header {
     flex-shrink: 0;
 }
 
-.navbar__buttons > button {
+.navbar__buttons img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar__button-menu {
     background-color: transparent;
     border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.navbar__button-line {
+    width: 30px;
+    height: 3px;
+    background-color: #FFF;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out
+}
+
+.navbar__button-open .line1,
+.navbar__button-open .line1::before,
+.navbar__button-open .line1::after {
+    transform: rotate(45deg);
+    transform-origin: 0 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar__button-open .line2,
+.navbar__button-open .line2::before,
+.navbar__button-open .line2::after {
+    transform: scaleY(0);
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar__button-open .line3,
+.navbar__button-open .line3::before,
+.navbar__button-open .line3::after {
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    transition: transform 0.4s ease-in-out;
 }

@@ -18,7 +18,11 @@
             </div>
             <div class="navbar__buttons">
                 <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></a>
-                <button @click="navmenu = ! navmenu"><img src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
+                <button class="navbar__button-menu" :class="navmenu && 'navbar__button-open'" @click="navmenu = ! navmenu">
+                    <span class="navbar__button-line line1"></span>
+                    <span class="navbar__button-line line2"></span>
+                    <span class="navbar__button-line line3"></span>
+                </button>
             </div>
         </div>
         <nav class="navbar__menu" x-show="navmenu" x-collapse.duration.600ms>

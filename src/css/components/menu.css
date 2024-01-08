@@ -24,7 +24,7 @@
     background-color: var(--noir, #252525);
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
     flex-direction: column;
