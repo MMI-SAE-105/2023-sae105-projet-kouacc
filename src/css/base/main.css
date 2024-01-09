@@ -112,8 +112,7 @@ figure {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    transition: 1s ease-in-out;
-    
+    transition: 2s ease-in-out;
 }
 
 .noscroll {
