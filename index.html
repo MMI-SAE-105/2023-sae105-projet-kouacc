@@ -1,50 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil - Endless Rebirth</title>
     <link rel="stylesheet" href="/src/css/pages/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
+
 <body>
     <header>
         <div class="navbar">
             <div class="navbar__home">
-                <a href="index.html">ENDLESS REBIRTH</a>
+                <a href="/fr/index.html">ENDLESS REBIRTH</a>
             </div>
             <div class="navbar__buttons">
-                <a><img src="/public/icons/globe.svg" alt="Globe sélection de langue"><a
-                        href="en/index.html"></a>
-                <button><img src="/public/icons/menu-burger.svg" alt="Menu burger"></button>
+                <a href="/en/index.html"><img src="/public/icons/globe.svg" alt="Globe sélection de langue"></a>
+                <button class="navbar__button-menu" :class="navmenu && 'navbar__button-open'"
+                    @click="navmenu = ! navmenu">
+                    <span class="navbar__button-line line1"></span>
+                    <span class="navbar__button-line line2"></span>
+                    <span class="navbar__button-line line3"></span>
+                </button>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Réplique</a></li>
-                <li><a href="#">The End of Evangelion</a></li>
-                <li><a href="#">Hideaki Anno</a></li>
-                <li><a href="#">KOMM, SÜSSER TOD</a></li>
-                <li><a href="#">Neon Genesis Evangelion</a></li>
-                <li><a href="#">Filmographie</a></li>
-                <li><a href="#">Bibliographie</a></li>
+        <nav class="navbar__menu" x-show="navmenu" x-collapse.duration.600ms>
+            <ul class="navbar__links">
+                <li><a href="/fr/articles/replica.html">Réplique</a></li>
+                <li><a href="/fr/articles/movie.html">The End of Evangelion</a></li>
+                <li><a href="/fr/articles/director.html">Hideaki Anno</a></li>
+                <li><a href="/fr/articles/music.html">KOMM, SÜSSER TOD</a></li>
+                <li><a href="/fr/articles/book.html">Neon Genesis Evangelion</a></li>
+                <li><a href="/fr/filmography.html">Filmographie</a></li>
+                <li><a href="/fr/bibliography.html">Bibliographie</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="hero container-1">
             <h1>La fatalité de l'extinction est aussi la joie de la <span>renaissance.</span></h1>
             <span>-Keel Lorentz, The End of Evangelion</span>
-            <img src="#" alt="#">
+            <img src="/public/icons/angle-down.svg" alt="Flèche vers le bas">
         </section>
+        <div class="home container-1">
+            <p>The End of Evangelion a réussi à non seulement révolutionner un genre en déclin, mais à révolutionner
+                l’animation japonaise. À travers des thèmes psychologiques et sociaux avec comme seule fatalité la fin
+                du monde, ce film touche des points sensibles sur la nature humaine, tout en donnant une vraie fin à une
+                série mythique.</p>
+            <article class="card">
+                <img src="/public/img/card_1.webp" alt="">
+                <div class="card__text card__color1">
+                    <p>“La fatalité de l’extinction est aussi la joie de la renaissance.” résonne à travers l’entiéreté
+                        du film. Découvrez comment cette simple réplique est devenue bien plus que le dénouement de
+                        l’histoire.</p>
+                    <a href="articles/replica.html">En savoir plus</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="/public/img/card_2.webp" alt="">
+                <div class="card__text card__color2">
+                    <p>The End of Evangelion a marqué toute l’industrie de l’animation japonaise pendant une ère
+                        stagnante. Comprennez comment ce film a réussi à révolutionner un genre.</p>
+                    <a href="articles/movie.html">En savoir plus</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="/public/img/card_3.webp" alt="">
+                <div class="card__text card__color1">
+                    <p>Apprennez-en plus sur Hideaki Anno, le génie de la série Evangelion et d’autres films. De sa
+                        jeunesse jusqu’à la sortie de The End of Evangelion, sa vie n’a pas fini de vous surprendre.</p>
+                    <a href="articles/director.html">En savoir plus</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="/public/img/card_4.webp" alt="">
+                <div class="card__text card__color2">
+                    <p>Découvrez “Komm, Süsser Tod”, la musique emblématique du film. Destruction, rédemption, fin du
+                        monde... Ce chef-d’œuvre musical a tout pour immerger le spectateur dans le film.</p>
+                    <a href="articles/music.html">En savoir plus</a>
+                </div>
+            </article>
+            <article class="card">
+                <img src="/public/img/card_5.webp" alt="">
+                <div class="card__text card__color1">
+                    <p>Le manga “Neon Genesis Evangelion” catégorise toute la série en un seul et même ouvrage
+                        exceptionnel. Apprennez comment le film a atteint ce résultat à partir des sources de la série.
+                    </p>
+                    <a href="articles/book.html">En savoir plus</a>
+                </div>
+            </article>
+        </div>
     </main>
     <footer>
         <ul>
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Glossaire</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="otherproj.html">Autres projets</a></li>
+            <li><a href="/fr/about.html">À propos</a></li>
+            <li><a href="/fr/glossary.html">Glossaire</a></li>
+            <li><a href="/fr/contact.html">Contact</a></li>
+            <li><a href="/fr/otherproj.html">Autres projets</a></li>
         </ul>
-        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département MMI de
+        <p>Projet réalisé dans le cadre d'un exercice pédagogique au <a href="https://mmimontbeliard.com">département
+                MMI de
                 Montbéliard.</a></p>
         <a href="mailto:maxence.lallemand0@gmail.com">maxence.lallemand0@gmail.com</a>
         <div class="student-info">
@@ -53,4 +110,5 @@
         </div>
     </footer>
 </body>
+
 </html>

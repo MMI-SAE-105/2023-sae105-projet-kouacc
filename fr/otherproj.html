@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{navmenu:false}" :class="navmenu && 'noscroll'">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header x-data="{navmenu: false}">
+    <header>
         <div class="navbar">
             <div class="navbar__home">
                 <a href="/fr/index.html">ENDLESS REBIRTH</a>
@@ -39,6 +39,7 @@
         </nav>
     </header>
     <main>
+        <div :class="navmenu && 'overlay-focus'"></div>
         <div class="line"></div>
         <div class="content container-1">
             <h1>Autres projets</h1>
